@@ -1,0 +1,70 @@
+body {
+  position: relative;
+  max-height: 100vh;
+  font-size: 16px;
+}
+
+.timer__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.timer__controls button {
+  flex-basis: 15%;
+}
+
+.timer__controls form {
+  flex-basis: 80%;
+}
+
+.timer__controls button {
+  padding: 15px 0;
+  font-size: 100%;
+  border: 1px solid gray;
+}
+
+.timer__controls button:hover {
+  background-color: #fff;
+}
+
+form input {
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 100%;
+}
+
+.display {
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.display__time-left {
+  font-size: 400%;
+  text-shadow: 1px 2px 10px #000;
+}
+
+.display__end-time {
+  font-size: 150%;
+}
+
+@media screen and (max-width: 750px) {
+  .timer__controls button {
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .timer__controls button {
+    flex-basis: 40%;
+  }
+
+  .display {
+    top: 140%;
+  }
+}
