@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List with Patterns</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <style>
+      .empty-alert {
+        display: none;
+      }
+      .p-5-20 {
+        padding: 5px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="tasks-wrap mt-5">
+      <div class="container">
+        <div class="card mb-3">
+          <div class="card-header">Add todo</div>
+          <div class="card-body">
+            <form name="addTodoItem">
+              <div class="form-group">
+                <label for="todoText">Text</label>
+                <input type="text" class="form-control" id="todoText" />
+                <div class="invalid-feedback">Please enter some text</div>
+              </div>
+              <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+          </div>
+        </div>
+        <div class="card mb-3 list-card">
+          <div class="card-header">Task List</div>
+          <div class="card-body">
+            <div class="alert alert-info empty-alert">Empty</div>
+            <ul class="list-group"></ul>
+          </div>
+        </div>
+        <button class="btn btn-primary clear-btn">Clear List</button>
+      </div>
+    </section>
+
+    <script src="js/id.js"></script>
+    <script src="js/tasks.js"></script>
+    <script src="js/localStorage.js"></script>
+    <script src="js/notification.js"></script>
+    <script src="js/observer.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
